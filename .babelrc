@@ -1,7 +1,6 @@
 {
 	"presets": [
-		["@babel/preset-env", {
-			// "debug":true
-		}]
+		["@babel/preset-env", {}],
+		"@babel/preset-react"
 	]
 }
