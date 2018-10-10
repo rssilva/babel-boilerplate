@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     main: [
       '@babel/polyfill',
-      './src/index.js',
+      './src/index.js'
     ]
   },
   mode: 'development',
@@ -20,15 +20,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader',
-          }
+          loader: 'babel-loader'
+        }
       },
       {
         test: /\.scss$/,
         use: [
-          "style-loader", // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+          'style-loader', // creates style nodes from JS strings
+          'css-loader', // translates CSS into CommonJS
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
         ]
       }
     ]
